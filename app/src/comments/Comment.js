@@ -7,7 +7,13 @@ export default class Comment extends React.Component {
   render(){
         return(
                 <div className='comment'>
-                      <div className='label'>{ this.props.description }</div>
+                      <div className="content_img">
+                          <img src={ this.props.img } />
+                      </div>
+                      <div className="content_body">
+                          <div className="user">{ this.props.user }</div>
+                          <div className="description">{ this.props.description }</div>
+                      </div>
                 </div>
         )
   }

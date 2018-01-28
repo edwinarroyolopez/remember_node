@@ -13,7 +13,7 @@ export default class CommentList extends React.Component {
 
       let comments = this.props.comments.map((comment) => {
             return(<div key={comment.description.toString()} >
-                          <Comment  description={comment.description} />
+                          <Comment  img={comment.img} user={comment.user} description={comment.description} />
                     </div>)
       })
 

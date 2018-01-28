@@ -6,7 +6,9 @@ import CommentBox from './comments/CommentBox'
   class App extends Component {
         constructor (props) {
           super(props)
-              this.state ={comments:[{description:'Comment One'},{description:'Comment Two'},{description:'Comment Three'}]};
+              this.state ={comments:[{description:'Dragon Ball Gt',user:'Ed',img:'public/img/goku.png'},
+                                    {description:'Naruto Shipudden',user:'Naruto',img:'public/img/naruto.png'},
+                                    {description:'Code Geass',user:'Lelouch',img:'public/img/zero.png'}]};
         }
 
       render() {
