@@ -1,0 +1,52 @@
+{
+  "name": "remember_node",
+  "version": "1.0.0",
+  "description": "Recordar node",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "clean": "rimraf dist",
+    "build": "npm run clean && webpack -p  --config webpack.prod.config.js && cp ./index.html public/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeroedprgrammer/remember_node.git"
+  },
+  "keywords": [
+    "Remember"
+  ],
+  "author": "zeroed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zeroedprgrammer/remember_node/issues"
+  },
+  "homepage": "https://github.com/zeroedprgrammer/remember_node#readme",
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "babel-preset-env": "^1.1.4",
+    "style-loader": "^0.13.1",
+    "css-loader": "^0.26.1",
+    "rimraf": "^2.5.4",
+    "html-webpack-plugin": "^2.24.1",
+    "react-addons-test-utils": "^0.14.7",
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "^1.14.0"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "babel-preset-stage-1": "^6.1.18",
+    "body-parser": "^1.17.2",
+    "consolidate": "*",
+    "cors": "^2.8.3",
+    "express": "^4.16.2",
+    "jquery": "^3.2.1",
+    "method-override": "^2.3.9",
+    "morgan": "^1.7.0",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "webpack": "^1.15.0"
+  }
+}
